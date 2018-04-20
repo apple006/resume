@@ -8,9 +8,9 @@
 - QQ: 1029538990
 
 # 个人信息
-- 基本信息： 刘鹏/男/1993年/24岁
+- 基本信息： 刘鹏/男/1994年/24岁
 - 专业：本科/泰山学院/软件工程专业
-- 工作年限：2年多
+- 工作年限：3年
 - Github： https://github.com/liupeng328
 - 开源中国：https://gitee.com/lovepeng
 - 博客：[今日头条](https://www.toutiao.com/c/user/2585432515/#mid=6741594486)/[简书](https://www.jianshu.com/u/4ea0af17fd67)/[自建博客](https://lpeng.top/)
