@@ -1,27 +1,14 @@
-# Resume
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# 简历
+这里用angular写了一个炫酷的简历，点击查看。
+# 这里有个简版的展示如下
+# 联系方式
+- 手机/微信/钉钉： 18864830605
+- 邮箱：liupeng328@aliyun.com
+- QQ: 1029538990
+# 个人信息
+- 基本信息： 刘鹏/男/1993年/24岁
+- 专业：本科/泰山学院/软件工程专业
+- 工作年限：3年
+- Github： https://github.com/liupeng328
+- 开源中国：https://gitee.com/lovepeng
+- 博客：[今日头条](https://www.toutiao.com/c/user/2585432515/#mid=6741594486)/[简书](https://www.jianshu.com/u/4ea0af17fd67)/[自建博客](https://lpeng.top/)
