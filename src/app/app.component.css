@@ -20,7 +20,7 @@ pre {
   font-size: 1.2em;
   font-weight: 600;
   /*命令行样式*/
-  transition: 1.3s;
+  transition: 1s;
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px #992493 solid;
   box-shadow: #996595;
@@ -31,7 +31,7 @@ pre {
 }
 
 .div2 {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
   margin-top: 30px;
   transition: 1s;
