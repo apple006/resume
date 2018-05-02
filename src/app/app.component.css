@@ -1,0 +1,50 @@
+pre {
+  color: #000000;
+  font-size: 2.2em;
+  font-weight: 700;
+  /*自动换行*/
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.div1 {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: 1s;
+}
+
+.pre1 {
+  /*字体样式*/
+  color: #46ceff;
+  font-size: 1.2em;
+  font-weight: 600;
+  /*命令行样式*/
+  transition: 1.3s;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px #992493 solid;
+  box-shadow: #996595;
+  padding-bottom: 40px;
+  /*自动换号*/
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.div2 {
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 30px;
+  transition: 1s;
+}
+
+.div3 {
+  /*滚动条样式*/
+  overflow-y: scroll; /*visible(默认值)、scroll、hidden、auto*/
+  scrollbar-arrow-color: #eee; /*立体滚动条亮边的颜色（设置滚动条的颜色）*/
+  scrollbar-base-color: #eee; /*滚动条的基本颜色*/
+  scrollbar-face-color: #eee; /*立体滚动条凸出部分的颜色*/
+  scrollbar-highlight-color: #eee; /*滚动条空白部分的颜色*/
+  scrollbar-shadow-color: #eee; /*立体滚动条阴影的颜色*/
+  height: 500px;
+  transition: 1s;
+}
