@@ -34,7 +34,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   
   
   # 工作经历
-    说下最近做的几个项目吧：
+    谈下最近做的几个项目：
     
     1.山东省和济南市安监局（全称：国家安全生产监督管理局）的安监系统。主要是方便政府监督企业进行安全生产，统计企业的“风险点”和“危险源”，
     开发时间2016年9月到2017年4月，目前已经上线运行一年多，已成为山东省安监系统的标准，该项目采用angularjs1.x+ssm（spring/spring mvc/mybatis）+mysql+缓存ignite技术架构开发，2016年正好是前端大变革的时候，
