@@ -43,6 +43,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   2.公共文化云项目。
   这个是一个全国的，文化行业的项目，开发时间为2017年3月到现在，第一期同时开发的为5个省，目前山东、宁夏、吉林已经上线运行，还有2个省正在开发中。系统总体为文化资源的管理平台，各省之间略微有差异，涉及文章（博客），图片，视频，音频等多种资源的管理和统计分析，系统包括当下火热的直播、点播和文章（博客、新闻、动态）等多个模块，同时也支持线上活动和线下活动，涉及文化行业的方方面面。
      该系统开发时已经有一个老版本的系统（并未完全开发完毕），架构采用jFinal+Bootstarp+mysql开发，新系统为一个迭代升级用于替换老版系统，新系统从技术选型和总体设计由我完成，系统采用angular5.x+spring-boot+mysql+mongodb等一系列技术框架开发完成，是一个标准的前后端分离开发项目，说下项目开发中，我利用合适的技术帮公司解决的一些问题吧（也是国内很多公司存在的问题）：
+    
     （1.）公司没有前端团队，所有的工作都由后台程序员完成
   后台程序员既编写后端也编写前端，同时还要设计数据库，大量时间浪费在页面修改、创作上，而且后端程序员多数美感不强，前端技术弱，难以实现美工的设计稿，经常一个页面改好多遍，效率低，团队痛苦。
   2017年8月份，前端组件化思想火热，谷歌的angular2.x版本发布一年左右，阿里的基于angular2的组件库zorro准备发布，我学习了下angular这个框架，帮助公司组建了前端开发团队。PC和手机web页面实现了统一技术栈，利用媒体自适应技术，一套代码，多屏显示，同时“前后台分离模式”使开发更加快速，功能迭代更加容易，问题解决。
@@ -90,9 +91,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   index = 0;
   timer;//计时器
   line = 0;//记录打印的行数
+  bannerShow=false;//是否显示命令行头
 
   pre;//pre对象
   div1;//body对象
+  prediv;//prediv对象
 
   //注入elementRef
   constructor(private elementRef: ElementRef,
@@ -102,13 +105,14 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() { // 模板中的元素已创建完成
     this.pre = this.elementRef.nativeElement.querySelector('pre');
     this.div1 = this.elementRef.nativeElement.querySelector('#div1');
-    console.dir(this.pre);
-    console.dir(this.div1);
+    this.prediv = this.elementRef.nativeElement.querySelector('#prediv');
+    // console.dir(this.pre);
+    // console.dir(this.div1);
   }
 
   ngOnInit(): void {
     this.temp = this.helloText.split('');
-    console.log(JSON.stringify(this.temp));
+    // console.log(JSON.stringify(this.temp));
     this.timer = setInterval(() => this.sayHello(), 200);
   }
 
@@ -130,21 +134,26 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.timer = null;
       this.resume = '';
       this.temp = null;
-      //初始化div酷黑样式
       setTimeout(() => {
-        this.renderer.addClass(this.div1, 'div1');
+        this.renderer.addClass(this.div1, 'div1');//半秒后初始化div1白色背景
         //300毫秒延时后设置 命令行弹窗样式
         setTimeout(() => {
+          //显示命令行头
+          this.bannerShow = true;
           //设置pre样式
           this.renderer.addClass(this.pre, 'pre1');
           //调用打印简历
           setTimeout(() => {
             this.temp = this.resumeText.split('');
-            console.log(JSON.stringify(this.temp));
+            // console.log(JSON.stringify(this.temp));
             this.timer = setInterval(() => this.printing(), 60);
+            //延时3秒 命令行下移30px
+            setTimeout(()=>{
+              this.renderer.addClass(this.prediv,'prediv');
+            },3000);
           }, 400);
         }, 400);
-      }, 400);
+      }, 500);
     }
   }
 
@@ -156,7 +165,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       if (this.temp[this.index] === '\n') {
         this.line++;
       }
-      //打印到6行的时候，命令行下移50px
+      //打印到6行的时候，改变字体颜色
       if (this.line === 6) {
         this.renderer.addClass(this.pre, 'div2');
       }

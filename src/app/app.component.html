@@ -1,7 +1,15 @@
 <div id="div1" nz-row>
   <div nz-col [nzXs]="nzXs" [nzMd]="nzMd" [nzXl]="nzXl"></div>
-  <div nz-col [nzXs]="22" [nzMd]="16" [nzXl]="8">
-    <pre><code>{{resume}}</code></pre>
+  <div id="prediv" nz-col [nzXs]="22" [nzMd]="16" [nzXl]="8">
+    <div class="banner" *ngIf="bannerShow">
+      <div class="btn">
+        <i class="anticon anticon-close-circle-o" style="background-color: #FFA9A0;"></i>
+        <i class="anticon anticon-plus-circle-o" style="background-color: #FFE596"></i>
+        <i class="anticon anticon-minus-circle-o" style="background-color: #A1D663"></i>
+      </div>
+      我的简历
+    </div>
+    <pre id="p"><code>{{resume}}</code></pre>
   </div>
   <div nz-col [nzXs]="1" [nzMd]="4" [nzXl]="8"></div>
 </div>
