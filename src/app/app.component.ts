@@ -16,9 +16,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   resume = '';
   private resumeText = `
   # 联系方式
-  手机/微信/钉钉：  18864830605
-  邮        箱：   liupeng328@aliyun.com
-  QQ （QQ邮箱）：   1029538990 (@qq.com)
+  手机/微信/钉钉： 18864830605
+  邮      箱：    liupeng328@aliyun.com
+  QQ：           1029538990 (@qq.com)
   
   
   # 个人信息
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   工作年限：    3年
   Github：     https://github.com/liupeng328
   开源中国：    https://gitee.com/lovepeng
-  博   客：    今日头条 / 简书 / 自建博客
+  博   客：    今日头条（大括号） / 简书（互联网编程） / 自建博客（https://lpeng.top）
   应聘职位：    架构师/高级程序员
   期望薪资：    30-35k（阿里除外）
   期望城市：    杭州（其实都行）
@@ -66,27 +66,24 @@ export class AppComponent implements OnInit, AfterViewInit {
   2016年正好是前端大变革（大混乱）的时候，各种前端技术层出不穷，比较幸运接触angularJs等一系列前端新技术，这个项目我从开始参与开发到最后参与系统设计，从开发到上线运行再到后来翻版给各个市使用，我都跟随开发维护，我从一个纯后台开发者慢慢转变为一个全栈开发者，是一个小菜鸟到合格开发者的蜕变过程。当时刚接触前端，用ng的指令封装了整个系统的搜索组件，封装ztree提供了一个tree的组件，封装了一个类似excel的变态表格Table（拖拽排序，合并单元格，动态显示/隐藏列，不同行号显示不同背景色等等），算是现在前端“组件化”的另类表现形式吧（虽然当时也不知道），当时的双向绑定确实比jQuary单向绑定方便了很多，尤其是大量表单的处理，2016年还是很时髦的技术，当然现在看来也不过了了，既然如此，那就不提了吧。
 
 
-
-
-    
-   
-  
   # 技能清单
-  主  技   能：  java 熟练掌握
+  主技能：    java 熟练掌握
   常用后端框架：  spring/spring-boot/mybatis/jfinal 熟练掌握
-  数  据   库：  mysql/oracle/sql server 熟练掌握
-  NoSQL     :   redis/mongodb/hbase 熟练使用
-  前       端：  angular/html5/css/js 熟练掌握
-  App       :   ionic/android 熟练使用
-  大数据相关  ：    hadoop/hbase/hive/zookeeper/phoenix/sqoop 熟练使用
+  数据库：    mysql/oracle/sql server 熟练掌握
+  NoSQL:     redis/mongodb/hbase 熟练使用
+  前端：      angular/html5/css/js 熟练掌握
+  App:   ionic/android 熟练使用
+  大数据相关：hadoop/hbase/hive/zookeeper/phoenix/sqoop 熟练使用
   常用集成开发工具： eclipse/intellij idea 熟练掌握
   常用版本控制工具： svn/git 熟练掌握
-  容器技术:       docker 熟练使用
+  容器技术:        docker 熟练使用
   常用项目管理工具： maven 熟练掌握
   操作系统：   windows/mac/centos/ubuntu 熟练使用
   
   
-  # 最后，致谢：
+  # 最后，这样看着不舒服，下边展示一个简明版的
+  
+  # 致谢：
     感谢您花时间阅读我的简历，期待能有机会与您共事。
   `;
   temp: string[];
