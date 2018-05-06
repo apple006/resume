@@ -186,7 +186,10 @@ export class AppComponent implements OnInit, AfterViewInit {
     } else {
       clearInterval(this.timer);
       //显示github的简历
-      this.show = true;
+      setTimeout(()=>{
+        this.show = true;
+        scroll(0,1000);
+      },500);
     }
   }
 
