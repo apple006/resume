@@ -1,6 +1,6 @@
 # 简历
 
-#### [github](https://github.com/liupeng328/resume)  | [开源中国](https://gitee.com/lovepeng/resume)
+#### 源代码：   [github](https://github.com/liupeng328/resume)  | [开源中国](https://gitee.com/lovepeng/resume)
 
 # 联系方式
 
