@@ -78,6 +78,6 @@ pre {
   scrollbar-face-color: #eee; /*立体滚动条凸出部分的颜色*/
   scrollbar-highlight-color: #eee; /*滚动条空白部分的颜色*/
   scrollbar-shadow-color: #eee; /*立体滚动条阴影的颜色*/
-  height: 500px;
+  height: 400px;
   transition: 1s;
 }

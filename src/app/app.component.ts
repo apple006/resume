@@ -130,7 +130,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     } else {
       clearInterval(this.timer);
       //设置左边div宽度
-      this.nzXs = 1;
+      this.nzXs = 2;
       this.nzMd = 4;
       this.nzXl = 8;
       //初始化数据
@@ -188,7 +188,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       //显示github的简历
       setTimeout(()=>{
         this.show = true;
-        scroll(0,1000);
+        scroll(100,1000);
       },500);
     }
   }
