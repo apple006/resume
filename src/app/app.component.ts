@@ -94,8 +94,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   index = 0;
   timer;//计时器
   line = 0;//记录打印的行数
-  bannerShow=false;//是否显示命令行头
-  show=false;//是否显示github简版简历
+  bannerShow = false;//是否显示命令行头
+  show = false;//是否显示github简版简历
 
   pre;//pre对象
   div1;//body对象
@@ -117,7 +117,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.temp = this.helloText.split('');
     // console.log(JSON.stringify(this.temp));
-    this.timer = setInterval(() => this.sayHello(), 200);
+    this.timer = setInterval(() => this.sayHello(), 80);
   }
 
   /**
@@ -152,9 +152,9 @@ export class AppComponent implements OnInit, AfterViewInit {
             // console.log(JSON.stringify(this.temp));
             this.timer = setInterval(() => this.printing(), 40);
             //延时3秒 命令行下移30px
-            setTimeout(()=>{
-              this.renderer.addClass(this.prediv,'prediv');
-            },3000);
+            setTimeout(() => {
+              this.renderer.addClass(this.prediv, 'prediv');
+            }, 3000);
           }, 400);
         }, 400);
       }, 500);
@@ -172,12 +172,13 @@ export class AppComponent implements OnInit, AfterViewInit {
       //打印到6行的时候，改变字体颜色
       if (this.line === 6) {
         this.renderer.addClass(this.pre, 'div2');
+        this.show = true;
       }
       //打印到11行的时候，显示滚动条
-      if (this.line === 17 ) {
+      if (this.line === 17) {
         this.renderer.addClass(this.pre, 'div3');
       }
-      if(this.line >20){
+      if (this.line > 20) {
         //保持滚动条在最底部
         this.pre.scrollTop = this.pre.scrollHeight;
       }
@@ -186,10 +187,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     } else {
       clearInterval(this.timer);
       //显示github的简历
-      setTimeout(()=>{
+      setTimeout(() => {
         this.show = true;
-        scroll(100,1000);
-      },500);
+      }, 500);
     }
   }
 
