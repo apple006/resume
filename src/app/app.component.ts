@@ -81,17 +81,21 @@ export class AppComponent implements OnInit, AfterViewInit {
   常用项目管理工具： maven 熟练掌握
   操作系统：   windows/mac/centos/ubuntu 熟练使用
   
-  
-  # 最后，这样看着不舒服，下边展示一个简明版的
-  
+ 
   # 致谢：
-    感谢您花时间阅读我的简历，期待能有机会与您共事。
+  感谢您花时间阅读我的简历，期待能有机会与您共事。
+   
+  # 最后，
+  这样看着不舒服，下边我把github页面搬过来，做个简明的展示，如下：
+  
+
   `;
   temp: string[];
   index = 0;
   timer;//计时器
   line = 0;//记录打印的行数
   bannerShow=false;//是否显示命令行头
+  show=false;//是否显示github简版简历
 
   pre;//pre对象
   div1;//body对象
@@ -146,7 +150,7 @@ export class AppComponent implements OnInit, AfterViewInit {
           setTimeout(() => {
             this.temp = this.resumeText.split('');
             // console.log(JSON.stringify(this.temp));
-            this.timer = setInterval(() => this.printing(), 60);
+            this.timer = setInterval(() => this.printing(), 40);
             //延时3秒 命令行下移30px
             setTimeout(()=>{
               this.renderer.addClass(this.prediv,'prediv');
@@ -181,6 +185,8 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.index++;
     } else {
       clearInterval(this.timer);
+      //显示github的简历
+      this.show = true;
     }
   }
 
